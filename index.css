@@ -5,9 +5,12 @@ body {
 }
 
 .video{
-   width: 100%;
-    display: flex;
-    justify-content: center;
+   width: 600;
+   height: 400;
+ background: #13e724;
+    box-shadow: 0 0 10px #13e724, 0 0 40px #13e724, 0 0 80px #13e724;
+    transition-delay: 1s;
+
 }
   .div-boton{
     display: flex;
