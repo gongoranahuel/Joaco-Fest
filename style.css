@@ -1,118 +1,100 @@
-        *{
-       
-        padding: 0;
-        margin: 0;
-        overflow-x: hidden;
-        max-width: 100%;
-            max-height: 100%;
-    }
-   
-        header{ 
-            width: 100%;
-            height: 25vh;
-            padding: 10px;
-            font-family: Arial, Helvetica, sans-serif;
-            background-image: url(/imagenes/teahubCAPTURA.jpg);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-direction: column;
-        }
-        header ol{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            list-style: none;
-            height: 110px;
-        }
-        header ol a,header a{
-            cursor: pointer;
-            color: white;
-            text-decoration: none;
-        }
-        .logo{
-            
-            width: 100%;
-            height: 100%;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            border-radius: 20px;
-            display: flex;
-            justify-content: space-around;
-        }
-        header ol a li{
-            font-size:40px;
-            padding: 10px 20px;
-            border-radius: 10px  0px 10px 0px;
-             margin: 0 5px;
-            transition:  .3s all ease-in;
-            font-family: 'Yuji Boku', serif;
-        }
-        header ol a li:hover{
-            background-color: white;
-            color: black;
-        }
-        .seccion1{
-           width: 100%;
-           height: 100%;
-        }
-.img {display: flex;
-    width: 100%;
-    
+<style>
+*{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+overflow-x: hidden;
 }
-
-
-        .checkBtn{
-            display: none;
-        }
-                @media only screen and (max-width: 665px) {
-            .checkBtn{
-              display: block;
-             width: 25px;
-             height: 25px;
-             cursor: pointer;
-             position: relative;
-             appearance: none;
-             -webkit-appearance:  none;
-        }
-        .checkBtn::before{
+header{
+    width: 100%;
+padding: 10px;
+font-family: 'Yuji Boku', serif;
+background-color: black;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: column-reverse;
+}
+header ol{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    list-style: none;
+}
+header ol a,header a{
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+.logo{
+    font-size:19px;
+    padding: 10px 20px;
+    border-radius: 10px  0px 10px 0px;
+     margin: 0 5px;
+    transition:  .3s all ease-in;
+}
+header ol a li{
+    font-size:17px;
+    padding: 10px 20px;
+    border-radius: 10px  0px 10px 0px;
+     margin: 0 5px;
+    transition:  .3s all ease-in;
+}
+header ol a li:hover{
+    background-color: white;
+    color: black;
+}
+.checkBtn{
+    display: none;
+}
+        @media only screen and (max-width: 650px) {
+    .checkBtn{
+      display: block;
+     width: 25px;
+     height: 25px;
+     cursor: pointer;
+     position: relative;
+     appearance: none;
+     -webkit-appearance:  none;
+}
+.checkBtn::before{
 content: '\f0c9';
 font-family: 'Font Awesome 5 Free';
 font-weight: 700;
 font-size: 1.5em;
 color: white;
-        }
-        .checkBtn:checked::before{
-            content: '\f00d';
-    }
+}
+.checkBtn:checked::before{
+    content: '\f00d';
+}
 
-              header ol{
-     position: absolute;
-            width: 100%;
-            top: 60px;
-            left: 0;
-            z-index: 100;
-            padding: 1.2em;
-            background-color: black;
-            flex-direction: column;
-            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-            transition: .4s clip-path;
-        }
-        .checkBtn:checked ~ ol{
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-        }
-         header ol a li{
-            margin: 5px 0;
-         }
-         header ol::before{
-            content: '';
-            position: absolute;
-            width: 100%;
-            z-index: 100;
-            height: 5px;
-            background-color: grey;
-            top: 98%;
-            left: 0;
-         }
-  }
-   
+      header ol{
+position: absolute;
+    width: 100%;
+    top: 60px;
+    left: 0;
+    z-index: 100;
+    padding: 1.2em;
+    background-color: black;
+    flex-direction: column;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: .4s clip-path;
+}
+.checkBtn:checked ~ ol{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+ header ol a li{
+    margin: 5px 0;
+ }
+ header ol::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    height: 5px;
+    background-color: grey;
+    top: 98%;
+    left: 0;
+ }
+}
+</style>
