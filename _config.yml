@@ -1,0 +1,8 @@
+title: Ui-Component-Minimal-Slider
+description: Simple Elegent and Minimalist (Customized) Responsive Slider.
+url: https://github.com/ArslanAmeer/Ui-Component-Minimal-Slider
+github_username: ArslanAmeer
+show_downloads: true
+theme: jekyll-theme-hacker
+plugins:
+- jekyll-feed

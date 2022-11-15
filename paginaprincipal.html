@@ -1,41 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=`, initial-scale=1.0" />
+    <title>Joaquim Fest</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Arizonia&family=Cinzel:wght@400;600&family=Indie+Flower&family=La+Belle+Aurore&family=Montserrat&family=Sacramento&family=Secular+One&family=Smooch&family=Yuji+Boku&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/slider.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=`, initial-scale=1.0">
-    <title>Responsive Navbar</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Arizonia&family=Cinzel:wght@400;600&family=Indie+Flower&family=La+Belle+Aurore&family=Montserrat&family=Sacramento&family=Secular+One&family=Smooch&family=Yuji+Boku&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-
-</head>
-
-<body>
+  <body>
     <header>
-        <a href="./paginaprincipal.html" class="logo"><img src="./imagenes/phone-640x1136.jpg" alt=""></a>
-        <input type="checkbox" class="checkBtn" />
-        <ol>
-            <a href="./paginaprincipal.html">
-                <li>Inicio</li>
-            </a>
-            <a href="#">
-                <li>PoolParty</li>
-            </a>
-            <a href="#">
-                <li>Actividades</li>
-            </a>
-            <a href="#">
-                <li>Ubicación</li>
-            </a>
-            <a href="#">
-                <li>Contacto</li>
-            </a>
-        </ol>
+      <a href="./paginaprincipal.html" class="logo"
+        ><img src="./imagenes/phone-640x1136.jpg" alt=""
+      /></a>
+      <input type="checkbox" class="checkBtn" />
+      <ol>
+        <a href="./paginaprincipal.html">
+          <li>Inicio</li>
+        </a>
+        <a href="#">
+          <li>Actividades</li>
+        </a>
+        <a href="#">
+          <li>Ubicación</li>
+        </a>
+        <a href="#">
+          <li>Contacto</li>
+        </a>
+      </ol>
     </header>
-    <section class="Instalaciones">
+    <section class="slider">
+    <div class="container">
 
+        <div class="rslides_container">
+            <h4>
+                En el cumple se van a estar desarrollando distintas actividades, Las cuales van a poder disfrutar en el transcurrir de las horas. Juegos con pistolas de agua, Globos, Bombuchas, Maquillaje Artístico, Burbujas de Jabón,fiesta de la Espuma y Además de la pileta (la cual va a estar supervisada por adultos).
+Cosas a Traer:
+	<p>
+        *Buena Onda!
+    </p>
+	<p>*Protector Solar (puesto)
+
+    </p>
+	<p>*Toalla
+
+    </p>
+	<p>*Ropa de Baño
+        
+    </p>
+            </h4>
+            <ul class="rslides" id="slider">
+                <li><img src="./imagenes/casa1.jpg" alt="1"></li>
+                <li><img src="./imagenes/casa2.jpg" alt="2"></li>
+                <li><img src="./imagenes/pintarts.jpg" alt="3"></li>
+                <li><img src="./imagenes/piletalance.jpg" alt="4"></li>
+                <li><img src="./imagenes/pistolas-de-agua.jpg" alt="4"></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script src="assets/js/slider.min.js"></script>
+    <script>    
+
+            $(function () {    
+                // Slideshow
+                $("#slider").responsiveSlides({
+                    auto: true,                     // Auto Slide Start
+                    pager: true,                    // Bullets on Bottom
+                    nav: true,                      // Prev & Next Button 
+                    speed: 700,                     // Slide Tranistion Speed (ms)
+                    timeout: 2700,                  // Time INterval Between Eac Slider (ms)
+                    maxwidth: 800,                  // Slider Width Max
+                    namespace: "centered-btns"      // Navigation button Location
+                });
+            });
+    
+    </script>
     </section>
-</body>
-
+  </body>
 </html>
