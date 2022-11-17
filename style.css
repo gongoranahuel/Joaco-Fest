@@ -5,6 +5,9 @@ padding: 0;
 margin: 0;
 overflow-x: hidden;
 }
+body {
+    background-image: url(./imagenes/pool.png);
+}
 header{
     width: 100%;
 padding: 10px;
@@ -98,7 +101,41 @@ position: absolute;
     left: 0;
  }
 }
+.seccion1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 4vh;
+  
+    font-family: 'Yuji Boku', serif;
+}
+a {
+        box-shadow: inset 0 0 0 0 #b4b4b4;
+        color: #f0f5f7;
+        margin: 0 -.25rem;
+        padding: 0 .25rem;
+        transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+      }
+      a:hover {
+        box-shadow: inset 100px 0 0 0 #d0e7f0;
+        color: white;
+      }
+
+a:hover {
+    color #255784;
+   
+transition-delay: 1s;
+box-shadow: 0 0 10px #9fb3c4, 0 0 40px #2196f3, 0 0 80px #2196f3
+
+}
+
+
 
 h4 {
     font-family: 'Yuji Boku', serif;
+}
+.ubicacion {
+    font-family: 'Yuji Boku', serif;
+    font-size: 16px;
 }
